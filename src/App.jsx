@@ -26,7 +26,7 @@ function App() {
       <div 
         className="fixed inset-0 opacity-10"
         style={{
-          backgroundImage: 'url(/soul.jpg)',
+          backgroundImage: 'url(/bg.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
@@ -86,17 +86,17 @@ function App() {
               </div>
             </motion.div>
 
-            {/* 53% Burn Highlight */}
+            {/* 60% Burn Highlight */}
             <motion.div
               className="bg-gray-900/50 border border-gray-700 rounded-2xl p-8"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-              <div className="text-6xl md:text-8xl font-black text-white mb-4">53%</div>
+              <div className="text-6xl md:text-8xl font-black text-white mb-4">60%</div>
               <div className="text-xl text-gray-300 mb-4">BURNT FOREVER</div>
               <div className="text-sm text-gray-500 mb-4">
-                53% sent to →
+                60% sent to →
               </div>
               <button
                 onClick={() => copyToClipboard(burnAddress, setBurnCopied)}
